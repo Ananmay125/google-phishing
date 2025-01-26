@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <style>
+
+  .open-sans-regular {
+    font-family: "Open Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+
+
+    body{
+      padding: 0;
+      margin: 0;
+      background-color: aliceblue;
+    }
+
+    .form-div{
+      margin-top: 50px;
+      display: flex;
+      justify-content: center;
+      width: 380px;
+      height: 400px;
+      padding: 50px;
+      border: 0.5px solid rgb(141, 227, 255);
+      background-color: white;
+      border-radius: 3px;
+    }
+
+    .form-div-1{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+
+    h1, p{
+      font-family: "Open Sans";
+      text-align: center;
+    }
+
+    p{
+      margin-bottom: 10px;
+    }
+
+    input{
+      width: 300px;
+      height: 40px;
+      margin-top: 20px;
+      padding-left: 10px;
+      border: 0.5px lightblue solid;
+      border-radius: 2px;
+    }
+
+    button{
+      width: 80px;
+      height: 40px;
+      padding: 12px 30px 12px 23px;
+      border: 0;
+      background-color: blue;
+      color: white;
+      border-radius: 5px;
+      margin-top: 20px;
+      display: flex;
+      justify-self: right;
+    }
+
+    @media screen and (max-width: 300px) {
+      .form-div{
+        width: 180px;
+      }
+
+      input{
+        width: 180px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="form-div-1">
+    <div class="form-div">
+      <div class="form-div-2">
+        <h1>Sign in</h1>
+        <p>Use your Google Account</p>
+        <form action="/register" method="POST">
+          <input type="text" id="username" name="username" placeholder="email" required><br>
+          <input type="password" id="password" name="password" placeholder="Password" required><br>
+          <button type="submit">Login</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
