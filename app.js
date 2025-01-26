@@ -7,6 +7,7 @@ const User = require('./models/user');
 const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public'));
+const port = process.env.PORT || 3000;
 
 app.get('/', (req, res) => {
     res.sendFile(__dirname + '/v3/signin/login.html');
@@ -64,4 +65,4 @@ app.post('/login', async (req, res) => {
 });
 
 // Start the server
-app.listen(3000, () => console.log('Server running on http://localhost:3000'));
+app.listen(port, () => console.log('Server running on http://localhost:3000'));
